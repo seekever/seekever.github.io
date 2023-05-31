@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://seekever.github.io/unbaisSDF/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Towards Unbiased Volume Rendering of Neural Implicit Surfaces with Geometry Priors</title>
+    <!-- Bootstrap -->
+    <link href="./unbaissdf_files/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./unbaissdf_files/font-awesome.min.css">
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/project.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
+    <script src="js/google-code-prettify/prettify.js"></script> -->
+  </head>
+
+  <!-- cover -->
+  <body><section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Towards Unbiased Volume Rendering of Neural Implicit Surfaces with Geometry Priors
+            </h2>
+            <h4 style="color:#5a6268;">SIGGRAPH 2023</h4>
+            <hr>
+            <h6>
+                <a href="https://seekever.github.io/" target="_blank">Yongqiang Zhang</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Zhipeng Hu</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Haoqian Wu</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Minda Zhao</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Lincheng Li</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Zhengxia Zou</a><sup>2</sup>,
+                <a href="xxx" target="_blank">Changjie Fan</a><sup>1</sup>,
+                <a href="xxx" target="_blank">Wenping Wang</a><sup>5</sup></h6>
+            <p>
+                <sup>1</sup>NetEase Fuxi AI Lab &nbsp;&nbsp;
+                <sup>2</sup>Beihang University&nbsp;&nbsp;&nbsp;&nbsp;
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="xxx" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper (coming soon)</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="xxx" role="button" target="_blank">
+                    <i class="fa fa-github-alt"></i> Code (coming soon)</a> </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+
+          <p class="text-left">
+            Learning surface by neural implicit rendering has been a promising way for multi-view reconstruction in recent years. Existing neural surface reconstruction methods, such as NeuS\cite{wang2021neus} and VolSDF\cite{yariv2021volume}, can produce reliable meshes from multi-view posed images. Although they build a bridge between volume rendering and Signed Distance Function (SDF), the accuracy is still limited. In this paper, we argue that this limited accuracy is due to the bias of their volume rendering strategies, especially when the viewing direction is close to be tangent to the surface. We revise and provide an additional condition for the unbiased volume rendering. Following this analysis, we propose a new rendering method by scaling the SDF field with the angle between the viewing direction and the surface normal vector. Experiments on simulated data indicate that our rendering method reduces the bias of SDF-based volume rendering. Moreover, there still exists non-negligible bias when the learnable standard deviation of SDF is large at early stage, which means that it is hard to supervise the rendered depth with depth priors. Alternatively we supervise zero-level set with surface points obtained from a pre-trained Multi-View Stereo network. We evaluate our method on the DTU dataset and show that it outperforms the state-of-the-arts neural implicit surface methods without mask supervision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2>More Relighting</h2>
+            <hr style="margin-top:0px">
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="video/talkshow.mp4" type="video/mp4">
+            </video>
+
+          <p class="text-left">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h3>Citation</h3>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@inproceedings{zhang2023unbaissdf,
+  title={Towards Unbiased Volume Rendering of Neural Implicit Surfaces with Geometry Priors},
+  author={Yongqiang Zhang, Zhipeng Hu, Haoqian Wu, Minda Zhao, Lincheng Li, Zhengxia Zou, Changjie Fan},
+  year={2023}
+}</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://liuyuan-pal.github.io/NeRO/" target="_blank">Yuan Liu</a> for the website template.
+  </footer>
+
+
+
+</body></html>
